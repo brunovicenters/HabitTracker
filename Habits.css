@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-color: #09090A;
     color: white;
 
     height: 100vh;
@@ -14,6 +14,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 48px;
+    position: fixed;
+    width: 100%;
+    background-color: #09090A;
 }
 button {
     padding: 16px 24px;
@@ -32,10 +35,11 @@ button {
     font-size: 16px;
     line-height: 125%;
 }
-form {
+#formHabits {
     display: flex;
 
-    padding: 0 48px;
+    padding: 180px 48px 48px;
+    width: fit-content;
 }
 .days {
     display: flex;
@@ -96,4 +100,10 @@ input:checked {
 
     border: 2px solid #A78BFA;
     border-radius: 8px;
+}
+
+@media (max-width: 570px) {
+    #buttonText {
+        display: none;
+    }
 }
