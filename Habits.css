@@ -5,6 +5,7 @@
 }
 body {
     background-color: black;
+    color: white;
 
     height: 100vh;
 }
@@ -30,4 +31,69 @@ button {
     font-weight: 600;
     font-size: 16px;
     line-height: 125%;
+}
+form {
+    display: flex;
+
+    padding: 0 48px;
+}
+.days {
+    display: flex;
+    gap: 48px;
+    margin-left: 20px;
+}
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.day div {
+    margin-bottom: 8px;
+
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+
+    color: #A1A1AA;
+
+    text-align: center;
+}
+.habits {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.habit {
+    width: 64px;
+    height: 64px;
+
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 64px;
+}
+input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+
+
+    border: 2px solid #27272A;
+    border-radius: 8px;
+    
+
+    background: #18181B;
+}
+
+input:checked {
+    background: #8B5CF6;
+
+    border: 2px solid #A78BFA;
+    border-radius: 8px;
 }
