@@ -1,21 +1,27 @@
 const form = document.querySelector("#formHabits");
 const nlwSetup = new NLWSetup(form);
+const createHabit = document.querySelector("#createHabit");
 
-const data = {
-  workout: [
-    "01-01",
-    "01-02",
-    "01-06",
-    "01-07",
-    "01-08",
-    "01-09",
-    "01-10",
-    "01-11",
-    "01-12",
-  ],
-  read: ["01-01", "01-03"],
-  sleep: ["01-01", "01-02", "01-03", "01-04", "01-05"],
+const add = () => {
+  const today = new Date().toLocaleDateString("pt-br").slice(0, -5);
+
+  const dayExists = nlwSetup.dayExists(today);
+
+  if (!dayExists) {
+    nlwSetup.addDay(today);
+  } else {
+    alert("Day already exist!");
+  }
 };
 
+const save = () => {
+  localStorage.setItem("habitsDone", JSON.stringify(nlwSetup.data));
+};
+
+createHabit.addEventListener("click", add);
+
+form.addEventListener("change", save);
+
+const data = JSON.parse(localStorage.getItem("habitsDone")) || {};
 nlwSetup.setData(data);
 nlwSetup.load();
