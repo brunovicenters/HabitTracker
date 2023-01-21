@@ -1,7 +1,7 @@
-<h1 align="center"> Habits </h1>
+<h1 align="center"> Habit Tracker </h1>
 
 <p align="center">
-NLW é um evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+Habit Tracker é um projeto feito apartir do evento NLW, promovido pela Rocketseat, na semana do dia 16/01/2023 ao dia 20/01/2023. <br/>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@ NLW é um evento exclusivo e gratuito, promovido pela Rocketseat para ensino de 
 <br>
 
 <p align="center">
-  <img alt="projeto Habits" src="..\assets\HabitTrackerPreview.jpg" width="100%">
+  <img alt="projeto Habit Tracker" src="./.github/HTPreview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -32,9 +32,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Habits é um app para ajudar a rastrear os hábitos.
+O Habit Tracker é um site para ajudar a rastrear os hábitos.
 
-- [Visite o projeto online](https://maykbrito.github.io/nlw-setup)
+- [Visite o projeto online](https://brunovicenters.github.io/HabitTracker/)
 
 ## 🔖 Layout
 
@@ -46,4 +46,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ♥ by Rocketseat & Bruno Vicente :wave:
